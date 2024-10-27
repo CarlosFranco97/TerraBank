@@ -466,8 +466,7 @@ div h3 {
 
 /* Boton Inicio */
 
-.botoninicio {
-
+.botonInicio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -778,7 +777,7 @@ button:hover {
 
 /* Preguntas Frecuentes */
 
-.principalpreguntas {
+.principalPreguntas {
     display: flex;
     flex-direction: column;
     justify-content: center;
