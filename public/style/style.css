@@ -844,7 +844,7 @@ button:hover {
 /* Contacto estilos */
 
 
-.contactomain {
+.mainContacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -856,10 +856,10 @@ button:hover {
     color: rgb(255, 255, 255);
 }
 
-.section_00 {
+.seccionContactanos {
     width: 100%;
     height: 500px;
-    background-image: url(../../img/luxa.org-opacity-changed-4047-Tips-para-dar-un-gran-servicio-al-cliente.jpg);
+    background-image: url(../../img/imagenContacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
@@ -867,18 +867,25 @@ button:hover {
     position: relative;
 }
 
-.section_11 {
-    font-size: 30px;
-    margin: 0;
-}
-
-.h1_00 {
+.tituloContactanos {
     color: rgb(255, 255, 255);
     font-size: 70px;
     top: 225px;
     right: 31%;
     position: absolute;
 }
+
+.seccionNumerosContacto {
+    font-size: 30px;
+    margin: 0;
+}
+
+.seccionNumerosContacto div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 .footer {
     text-align: center;
@@ -897,14 +904,7 @@ button:hover {
     width: 105%;
 }
 
-.footerpreguntas {
-    text-align: center;
-    padding: 0;
-    background-color: #FF5E1A;
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    width: 105%;
-}
+
 
 .footerubicacion {
     text-align: center;
