@@ -880,14 +880,13 @@ div iframe {
     position: absolute;
 }
 
-.footerindex {
+.footer {
     text-align: center;
-    padding: 0;
     background-color: #FF5E1A;
     color: rgb(255, 255, 255);
-    bottom: 0;
     width: 100%;
 }
+
 
 .footercontacto {
     text-align: center;
