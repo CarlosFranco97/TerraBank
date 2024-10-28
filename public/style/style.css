@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +7,7 @@
 }
 
 body {
-    width: 1680px;
-    height: 920x;
+    width: 100%;
     font-family: "Bitter", serif;
     background-color: #014B3F;
     color: #ffffff;
@@ -16,8 +16,8 @@ body {
     position: relative;
 }
 
-header {    
-    background-color: #014B3F; 
+header {
+    background-color: #014B3F;
     color: white;
     padding: 20px;
     text-align: center;
@@ -27,7 +27,8 @@ header {
     position: relative;
 }
 
-.registro, .login {
+.registro,
+.login {
     width: 100px;
     height: 50px;
     background-color: #014B3F;
@@ -66,7 +67,7 @@ a {
     right: -140px;
     margin-top: 15px;
 
-}  
+}
 
 header h1 {
     margin-bottom: 20px;
@@ -78,34 +79,23 @@ nav {
     background-color: #014B3F;
 }
 
-.portafolio {
-    display: inline;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 nav button {
     background-color: #FF5E1A;
     border: none;
     color: white;
-    margin: 0 5px;  
+    margin: 0 5px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
     width: 125px;
     height: 75px;
     font-weight: bolder;
     font-style: italic;
 }
 
-nav button:hover {
-    background-color: #FF5E1A; 
-}
-
 nav a {
     text-decoration: none;
-    color: white;
 }
 
 aside {
@@ -116,13 +106,16 @@ aside {
     margin-top: 10px;
     border-radius: 20px;
     position: absolute;
-    
-    
+
+
 }
-.preguntas, .sucursales, .contactanos{
+
+.preguntas,
+.sucursales,
+.contactanos {
     width: 100px;
     height: 100px;
-    background-color:#014B3F ;
+    background-color: #014B3F;
     border-radius: 50px;
     color: #FFF6EF;
     border-color: #ffffff;
@@ -145,7 +138,7 @@ main {
     background-color: #014B3F;
     height: 500px;
     margin-top: 20px;
-    position: relative; 
+    position: relative;
 }
 
 .persona {
@@ -156,7 +149,7 @@ main {
     margin-left: 5px;
 }
 
-.tituloterra {
+.tituloTerra {
     background-color: #ffffff;
     width: 400px;
     height: 100px;
@@ -168,51 +161,53 @@ main {
     align-items: center;
     border-radius: 10px;
     color: #014B3F;
+
 }
 
-.terratitle {
+.tituloTerra h1 {
     font-size: 30px;
     margin-top: 20px;
     color: #014B3F;
+    font-style: italic;
 }
 
-.nuestravisiontitulo, .tecnologiatitulo, .nosotrostitulo {
-    display: flex; 
+.nuestraVisionTitulo,
+.tecnologiaTitulo,
+.nosotrosTitulo {
     font-size: 30px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    
 }
 
-.nosotros, .nuestra-vision, .tecnologia {
+.nosotros,
+.nuestraVision,
+.tecnologia {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
 }
 
-.nuestra-vision, .tecnologia {
+.nuestraVision,
+.tecnologia {
     position: relative;
 }
 
-.nuestra-vision img, .tecnologia img {
+.nuestraVision img,
+.tecnologia img {
     position: absolute;
     top: -13px;
 }
 
-main h1 {
-    font-style: italic;
-}
 
-.circle, .equis, .mas {
+
+.circle,
+.equis,
+.mas {
     width: 80px;
     height: 80px;
 }
 
 #bienvenido {
-    background-color:#ffffff; 
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     margin: 40px 0;
@@ -224,13 +219,11 @@ main h1 {
 }
 
 #bienvenido h2 {
-    color: #014B3F; 
-}
-
-section h2 {
-    color: #014B3F; 
+    color: #014B3F;
+    color: #014B3F;
     margin-bottom: 10px;
 }
+
 
 #bienvenido p {
     margin: 10px 0;
@@ -238,7 +231,7 @@ section h2 {
 
 .boton {
     display: inline-block;
-    background-color: #014B3F; 
+    background-color: #014B3F;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -247,12 +240,9 @@ section h2 {
 }
 
 .boton:hover {
-    background-color: #FF5E1A; 
+    background-color: #FF5E1A;
 }
 
-section {
-    margin: 0px 0;
-}
 
 #descubre {
     display: inline-block;
@@ -263,8 +253,8 @@ section {
     color: #FF5E1A;
 }
 
-.cuentadeahorros {
-    background-color:#FF5E1A;
+.cuentaDeAhorros {
+    background-color: #FF5E1A;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,20 +265,21 @@ section {
     font-style: italic;
     font-weight: bolder;
 }
-    
+
 
 div h1 {
     font-size: 50px;
     margin-top: 50px;
 }
- div h2 {
-    margin-top: 30px;
- }
 
- div h3 {
+div h2 {
+    margin-top: 30px;
+}
+
+div h3 {
     color: #ffffff;
     font-size: 25px;
- }
+}
 
 .abre {
     background-color: #014B3F;
@@ -300,7 +291,7 @@ div h1 {
     margin-top: 45px;
 }
 
-.lineadecreditos {
+.lineaCreditos {
     background-color: #014B3F;
     display: flex;
     flex-direction: column;
@@ -313,19 +304,22 @@ div h1 {
     font-style: italic;
 }
 
-.parrillacreditos {
+.parrillaCreditos {
     display: flex;
     gap: 5px;
     height: 100%;
     padding: 10px;
 }
 
-.parrillacreditos h5{
+.parrillaCreditos h5 {
     font-size: 30px;
 
 }
 
-.uno, .dos, .tres, .cuatro {
+.seccionCreditoUno,
+.seccionCreditoDos,
+.seccionCreditoTres,
+.seccionCreditoCuatro {
 
     display: flex;
     flex-direction: column;
@@ -340,13 +334,13 @@ div h1 {
     color: black;
 }
 
-.lc {
+.tituloLineaCreditos {
     color: white;
     font-weight: bold;
     font-size: 50px;
 }
 
-.tarjetasdecredito {
+.tarjetasCredito {
     background-color: #ffffff;
     padding: 15px;
     margin-top: 220px;
@@ -354,7 +348,14 @@ div h1 {
     height: auto;
 }
 
-.parrillatarjetadecredito {
+.tituloTarjetasCredito {
+    color: #014B3F;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.parrillaTarjetasCredito {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -362,29 +363,26 @@ div h1 {
     gap: 20px;
 }
 
-.imagenesizq {
+.imagenesTarjetaIzquierda {
     display: flex;
     flex-direction: column;
-    gap: 20px;  
+    gap: 20px;
     width: 50%;
 }
 
-.imagenesder {
+.imagenesTarjetaDerecha {
     display: flex;
     flex-direction: column;
-    gap: 20px;  
+    gap: 20px;
     width: 50%;
 }
 
 
-.tc {
-    color: #014B3F;
-    font-weight: bold;
-    font-size: 50px;
-    font-style: italic;
-}
 
-.tarjetauno, .tarjetados, .tarjetatres, .tarjetacuatro {
+.tarjetaUno,
+.tarjetaDos,
+.tarjetaTres,
+.tarjetaCuatro {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -394,33 +392,36 @@ div h1 {
     height: 300px;
 }
 
-.tarjetauno div, .tarjetados div, .tarjetatres div, .tarjetacuatro div{
-    margin-right: 120px 
-    }
-
-.tarjetauno {
-background: linear-gradient(61deg, rgba(1,75,63,1) 36%, rgba(2,202,129,1) 100%);
+.tarjetaUno div,
+.tarjetaCuatro div {
+    margin-right: 120px
 }
 
-.tarjetados {
-    background: rgb(1,75,63);
-background: linear-gradient(61deg, rgba(1,75,63,1) 22%, rgba(0,87,225,1) 100%);
-    
+.tarjetaDos div, .tarjetaTres div {
+    margin-right: 150px;
 }
 
-.tarjetatres {
-    background: rgb(2,202,129);
-background: linear-gradient(61deg, rgba(2,202,129,1) 22%, rgba(1,75,63,1) 94%);
-    
+
+.tarjetaUno {
+    background: linear-gradient(61deg, rgba(1, 75, 63, 1) 36%, rgba(2, 202, 129, 1) 100%);
 }
 
-.tarjetacuatro {
-    background: rgb(255,94,26);
-background: linear-gradient(61deg, rgba(255,94,26,1) 22%, rgba(0,87,225,1) 94%);
-   
+.tarjetaDos {
+    background: linear-gradient(61deg, rgba(1, 75, 63, 1) 22%, rgba(0, 87, 225, 1) 100%);
+
 }
 
-.imagen1, .imagen2, .imagen3, .imagen4 {
+.tarjetaTres {
+    background: linear-gradient(61deg, rgba(2, 202, 129, 1) 22%, rgba(1, 75, 63, 1) 94%);
+
+}
+
+.tarjetaCuatro {
+    background: linear-gradient(61deg, rgba(255, 94, 26, 1) 22%, rgba(0, 87, 225, 1) 94%);
+
+}
+
+.imagenesTarjetasCredito {
     position: absolute;
     left: 0;
     width: 300px;
@@ -428,33 +429,33 @@ background: linear-gradient(61deg, rgba(255,94,26,1) 22%, rgba(0,87,225,1) 94%);
 }
 
 
-.buttonuno, .buttondos, .buttontres, .buttoncuatro {
+.botonTarjetas {
     background-color: #014B3F;
     height: 60px;
     width: 120px;
     border-radius: 5px;
     color: white;
+    border: none;
     font-size: 15px;
-    font-weight:bold;
+    font-weight: bold;
     font-style: italic;
 }
 
-.inversionalamano {
+.inversionALaMano {
     background-color: #014B3F;
     width: 100%;
     height: 400px;
     color: white;
 }
 
-.inversiontitulo {
+.inversionTitulo {
     color: white;
 }
 
 
 /* Boton Inicio */
 
-.botoninicio {
-
+.botonInicio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,7 +466,7 @@ background: linear-gradient(61deg, rgba(255,94,26,1) 22%, rgba(0,87,225,1) 94%);
     border-radius: 5px;
     color: white;
     font-size: 15px;
-    font-weight:bold;
+    font-weight: bold;
     font-style: italic;
     border: solid 1px white;
 }
@@ -473,7 +474,9 @@ background: linear-gradient(61deg, rgba(255,94,26,1) 22%, rgba(0,87,225,1) 94%);
 /* Estilos Registro */
 
 
-h1, h2, p {
+h1,
+h2,
+p {
     margin-bottom: 20px;
 }
 
@@ -500,7 +503,7 @@ header {
 .logo {
     width: 200px;
     margin-left: auto;
-    margin-right: 150px; /* Ajuste para alinear el logo a la derecha */
+    margin-right: 150px;
 }
 
 button:hover {
@@ -508,36 +511,36 @@ button:hover {
 }
 
 
-.hoyenterrabank {
-    background: rgb(255,94,26);
-    background: rgb(1,75,63);
-    background: radial-gradient(circle, rgba(1,75,63,1) 67%, rgba(255,94,26,1) 100%);    text-align: center;
+.registroTerrabank {
+    background: rgb(255, 94, 26);
+    background: rgb(1, 75, 63);
+    background: radial-gradient(circle, rgba(1, 75, 63, 1) 67%, rgba(255, 94, 26, 1) 100%);
+    text-align: center;
     padding: 50px 0;
 }
 
-.hoyenterrabank h1 {
+.registroTerrabank h1 {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
-    font-style: italic ;
+    font-style: italic;
 }
 
-/* Registration Section */
-.registration-section {
+.seccionRegistro {
     display: flex;
     text-align: center;
-    justify-content: center; /* Se centra el menú de registro */
+    justify-content: center;
     padding: 50px 0;
     width: 90%;
     margin: 0 auto;
 }
 
-.registration-container {
-    width: 60%; /* Ajustar para que el formulario no sea tan ancho */
+.contenedorRegistro {
+    width: 60%;
     display: flex;
-    justify-content: center; /* Centrar el formulario */
+    justify-content: center;
 }
 
-.registration-form {
+.formularioRegistro {
     background-color: white;
     color: rgb(0, 0, 0);
     padding: 30px;
@@ -545,18 +548,18 @@ button:hover {
     width: 100%;
 }
 
-.registration-form h2 {
+.formularioRegistro h2 {
     margin-bottom: 20px;
 }
 
-.registration-form label {
+.formularioRegistro label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.registration-form input,
-.registration-form select {
+.formularioRegistro input,
+.formularioRegistro select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -564,30 +567,22 @@ button:hover {
     border: 1px solid #ccc;
 }
 
-.terms {
+.terminos {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.terms input {
-    margin-right: 10px; /* Espacio entre el checkbox y el texto */
-    transform: scale(1.5); /* Agranda el checkbox */
+.terminos input {
+    margin-right: 10px;
+    transform: scale(1.5);
     width: 20px;
     height: 20px;
 }
 
 
-.recaptcha-placeholder {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    color: #333;
-}
 
-.register-btn {
+.botonRegistro {
     background-color: #014B3F;
     border: none;
     color: white;
@@ -598,70 +593,29 @@ button:hover {
     border-radius: 5px;
 }
 
-.register-btn:hover {
-    background-color: #014B3F;
+.botonRegistro:hover {
+    background-color: #FF5E1A;
 }
 
-.thank-you {
+.formularioRegistro p {
     text-align: center;
     font-weight: bold;
     margin-top: 20px;
 }
 
-.social-media {
+.redes {
     text-align: center;
     margin-top: 10px;
 }
 
-.social-media a {
+.redes a {
     color: #4ECDC4;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-icon.fb {
-    background-image: url('facebook-icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.social-icon.twitter {
-    background-image: url('twitter-icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
 /* Estilos Log in */
-
-
-.principales {
-    width: 100px;
-    height: 50px;
-    background-color: aliceblue;
-    border-radius: 25px;
-    border: 2px solid #FF5E1A;
-    margin-left: 150px;
-    padding: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 .logo {
     width: 200px;
@@ -670,7 +624,7 @@ button:hover {
 }
 
 
-.login-section {
+.seccionInicioSesion {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -680,21 +634,21 @@ button:hover {
     font-style: italic;
 }
 
-.login-container {
+.contenedorInicioSesion {
     width: 60%;
     display: flex;
     justify-content: center;
 }
 
-.iniciarsesion {
+.iniciarSesion {
     color: #014B3F;
 }
 
-.ingresesusdatos {
+.ingreseSusDatos {
     color: #014B3F;
 }
 
-.login-form {
+.formularioInicioSesion {
     background-color: white;
     color: rgb(0, 0, 0);
     padding: 30px;
@@ -702,34 +656,34 @@ button:hover {
     width: 100%;
 }
 
-.login-form h1 {
+.formularioInicioSesion h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.login-form h2 {
+.formularioInicioSesion h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.login-form label {
+.formularioInicioSesion label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.login-form input {
+.formularioInicioSesion input {
     width: 100%;
-    padding: 15px; 
+    padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1rem;
 }
 
-.recaptcha-placeholder {
+.recaptchaPlaceholder {
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
@@ -738,7 +692,7 @@ button:hover {
     color: #333;
 }
 
-.login-btn {
+.botonLogin {
     background-color: #FF5E1A;
     border: none;
     color: white;
@@ -749,14 +703,14 @@ button:hover {
     border-radius: 5px;
 }
 
-.login-btn:hover {
-    background-color: #FF5E1A;
+.botonLogin:hover {
+    background-color: #014B3F;
 }
 
 
 /* Preguntas Frecuentes */
 
-.principalpreguntas {
+.principalPreguntas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -769,7 +723,7 @@ button:hover {
 
 /* Ubicacion Estilos */
 
-.mainubicacion {
+.mainUbicacion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -779,11 +733,11 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
-    
+
 }
 
 
-.section_cero{
+.sectionCero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -791,38 +745,39 @@ button:hover {
     text-align: center;
     width: 60%;
     height: 120px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     color: #014B3F;
     font-size: 30px;
 }
 
-.div_uno_uno{
+.divUbicacionUno {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     font-style: italic;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 25px
 }
 
-.div_dos_dos{
+.divUbicacionDos{
     margin-top: -20px;
 }
 
-li{
+.divUbicacionUno li{
     margin-bottom: 15px;
     margin-top: 0;
+    list-style: none;
 }
 
-div iframe {
+.divUbicacionDos iframe {
     border-radius: 10px;
 }
 
 /* Contacto estilos */
 
 
-.contactomain{
+.mainContacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -834,10 +789,10 @@ div iframe {
     color: rgb(255, 255, 255);
 }
 
-.section_00{
+.seccionContactanos {
     width: 100%;
     height: 500px;
-    background-image: url(../../img/luxa.org-opacity-changed-4047-Tips-para-dar-un-gran-servicio-al-cliente.jpg);
+    background-image: url(../../img/imagenContacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
@@ -845,12 +800,7 @@ div iframe {
     position: relative;
 }
 
-.section_11{
-    font-size: 30px;
-    margin: 0;
-}
-
-.h1_00 {
+.tituloContactanos {
     color: rgb(255, 255, 255);
     font-size: 70px;
     top: 225px;
@@ -858,52 +808,27 @@ div iframe {
     position: absolute;
 }
 
-.footerindex {
+.seccionNumerosContacto {
+    font-size: 30px;
+    margin: 0;
+}
+
+.seccionNumerosContacto div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.footer {
     text-align: center;
-    padding: 0;
-    background-color: #FF5E1A; 
+    background-color: #FF5E1A;
     color: rgb(255, 255, 255);
-    bottom: 0;
     width: 100%;
 }
 
-.footercontacto {
-    text-align: center;
-    padding: 0;
-    background-color: #FF5E1A; 
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    width: 100%;
-}
 
-.footerlogin {
-    text-align: center;
-    padding: 0;
-    background-color: #FF5E1A; 
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    width: 105%;
-}
-
-.footerpreguntas {
-    text-align: center;
-    padding: 0;
-    background-color: #FF5E1A; 
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    width: 105%;
-}
-
-.footerubicacion {
-    text-align: center;
-    padding: 0;
-    background-color: #FF5E1A; 
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    width: 100%;
-}
-
-.copyfooter {
+.copyFooter {
     display: flex;
     align-items: center;
     justify-content: center;

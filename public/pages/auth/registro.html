@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Terra Bank</title>
-    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../style/style.css">
 </head>
 <body>
 
     
-    <section class="hoyenterrabank">
+    <section class="registroTerrabank">
         <h1>Regístrese hoy en Terra Bank</h1>
     </section>
 
     
-    <section class="registration-section">
-        <div class="registration-container">
-            <form class="registration-form">
+    <section class="seccionRegistro">
+        <div class="contenedorRegistro">
+            <form class="formularioRegistro">
                 <h2>Ingrese sus datos</h2>
 
-                <label for="first-name">Nombre</label>
-                <input type="text" id="first-name" name="first-name" required>
+                <label for="primerNombre">Nombre</label>
+                <input type="text" id="primerNombre" name="primerNombre" required>
 
-                <label for="last-name">Apellido</label>
-                <input type="text" id="last-name" name="last-name" required>
+                <label for="primerNombre">Apellido</label>
+                <input type="text" id="primerNombre" name="primerNombre" required>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
@@ -34,11 +34,11 @@
                 <label for="address">Dirección</label>
                 <input type="text" id="address" name="address" required>
 
-                <label for="dob">Fecha de nacimiento</label>
-                <input type="date" id="dob" name="dob" required>
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
 
-                <label for="account-type">Tipo de cuenta</label>
-                <select id="account-type" name="account-type" required>
+                <label for="tipoCuenta">Tipo de cuenta</label>
+                <select id="tipoCuenta" name="tipoCuenta" required>
                     <option value="personal">Persona</option>
                     <option value="business">Empresa</option>
                 </select>
@@ -46,16 +46,17 @@
                 <label for="password">Cree una contraseña</label>
                 <input type="password" id="password" name="password" required>
 
-                <label class="terms">
-                    <input type="checkbox" name="terms" required> Acepto los términos y condiciones
+                <label class="terminos">
+                    <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
                 </label>
 
-                <div class="recaptcha-placeholder">[reCAPTCHA]</div>
+                <div class="recaptchaPlaceholder">[reCAPTCHA]</div>
 
-                <button type="submit" class="register-btn">Regístrese</button>
-                <p class="thank-you">Gracias por elegirnos</p>
+                <button type="submit" class="botonRegistro">Regístrese</button>
 
-                <div class="social-media">
+                <p>Gracias por elegirnos</p>
+
+                <div class="redes">
                     <a href="#">Facebook</a>
                     <a href="#">Twitter</a>
                     <a href="#">Instagram</a>
@@ -63,7 +64,7 @@
             </form>
         </div>
     </section>
-    <footer>
+    <footer class="copyFooter">
         <p>&copy; 2024 Terra Bank. Todos los derechos reservados.</p>
     </footer>
 
