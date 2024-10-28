@@ -7,8 +7,7 @@
 }
 
 body {
-    width: 1680px;
-    height: 920x;
+    width: 100%;
     font-family: "Bitter", serif;
     background-color: #014B3F;
     color: #ffffff;
@@ -80,13 +79,7 @@ nav {
     background-color: #014B3F;
 }
 
-/* clase no utilizada */
-/* .portafolio {
-    display: inline;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+
 
 nav button {
     background-color: #FF5E1A;
@@ -250,10 +243,6 @@ main {
     background-color: #FF5E1A;
 }
 
-/* clase sin usar */
-/* section {
-    margin: 0px 0;
-} */
 
 #descubre {
     display: inline-block;
@@ -515,7 +504,6 @@ header {
     width: 200px;
     margin-left: auto;
     margin-right: 150px;
-    /* Ajuste para alinear el logo a la derecha */
 }
 
 button:hover {
@@ -523,7 +511,7 @@ button:hover {
 }
 
 
-.hoyenterrabank {
+.registroTerrabank {
     background: rgb(255, 94, 26);
     background: rgb(1, 75, 63);
     background: radial-gradient(circle, rgba(1, 75, 63, 1) 67%, rgba(255, 94, 26, 1) 100%);
@@ -531,32 +519,28 @@ button:hover {
     padding: 50px 0;
 }
 
-.hoyenterrabank h1 {
+.registroTerrabank h1 {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
     font-style: italic;
 }
 
-/* Registration Section */
-.registration-section {
+.seccionRegistro {
     display: flex;
     text-align: center;
     justify-content: center;
-    /* Se centra el menú de registro */
     padding: 50px 0;
     width: 90%;
     margin: 0 auto;
 }
 
-.registration-container {
+.contenedorRegistro {
     width: 60%;
-    /* Ajustar para que el formulario no sea tan ancho */
     display: flex;
     justify-content: center;
-    /* Centrar el formulario */
 }
 
-.registration-form {
+.formularioRegistro {
     background-color: white;
     color: rgb(0, 0, 0);
     padding: 30px;
@@ -564,18 +548,18 @@ button:hover {
     width: 100%;
 }
 
-.registration-form h2 {
+.formularioRegistro h2 {
     margin-bottom: 20px;
 }
 
-.registration-form label {
+.formularioRegistro label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.registration-form input,
-.registration-form select {
+.formularioRegistro input,
+.formularioRegistro select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -583,32 +567,22 @@ button:hover {
     border: 1px solid #ccc;
 }
 
-.terms {
+.terminos {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.terms input {
+.terminos input {
     margin-right: 10px;
-    /* Espacio entre el checkbox y el texto */
     transform: scale(1.5);
-    /* Agranda el checkbox */
     width: 20px;
     height: 20px;
 }
 
 
-.recaptcha-placeholder {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    color: #333;
-}
 
-.register-btn {
+.botonRegistro {
     background-color: #014B3F;
     border: none;
     color: white;
@@ -619,70 +593,29 @@ button:hover {
     border-radius: 5px;
 }
 
-.register-btn:hover {
-    background-color: #014B3F;
+.botonRegistro:hover {
+    background-color: #FF5E1A;
 }
 
-.thank-you {
+.formularioRegistro p {
     text-align: center;
     font-weight: bold;
     margin-top: 20px;
 }
 
-.social-media {
+.redes {
     text-align: center;
     margin-top: 10px;
 }
 
-.social-media a {
+.redes a {
     color: #4ECDC4;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-icon.fb {
-    background-image: url('facebook-icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.social-icon.twitter {
-    background-image: url('twitter-icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
 /* Estilos Log in */
-
-
-.principales {
-    width: 100px;
-    height: 50px;
-    background-color: aliceblue;
-    border-radius: 25px;
-    border: 2px solid #FF5E1A;
-    margin-left: 150px;
-    padding: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 .logo {
     width: 200px;
@@ -691,7 +624,7 @@ button:hover {
 }
 
 
-.login-section {
+.seccionInicioSesion {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -701,21 +634,21 @@ button:hover {
     font-style: italic;
 }
 
-.login-container {
+.contenedorInicioSesion {
     width: 60%;
     display: flex;
     justify-content: center;
 }
 
-.iniciarsesion {
+.iniciarSesion {
     color: #014B3F;
 }
 
-.ingresesusdatos {
+.ingreseSusDatos {
     color: #014B3F;
 }
 
-.login-form {
+.formularioInicioSesion {
     background-color: white;
     color: rgb(0, 0, 0);
     padding: 30px;
@@ -723,25 +656,25 @@ button:hover {
     width: 100%;
 }
 
-.login-form h1 {
+.formularioInicioSesion h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.login-form h2 {
+.formularioInicioSesion h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.login-form label {
+.formularioInicioSesion label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.login-form input {
+.formularioInicioSesion input {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
@@ -750,7 +683,7 @@ button:hover {
     font-size: 1rem;
 }
 
-.recaptcha-placeholder {
+.recaptchaPlaceholder {
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
@@ -759,7 +692,7 @@ button:hover {
     color: #333;
 }
 
-.login-btn {
+.botonLogin {
     background-color: #FF5E1A;
     border: none;
     color: white;
@@ -770,8 +703,8 @@ button:hover {
     border-radius: 5px;
 }
 
-.login-btn:hover {
-    background-color: #FF5E1A;
+.botonLogin:hover {
+    background-color: #014B3F;
 }
 
 
@@ -895,27 +828,7 @@ button:hover {
 }
 
 
-.footerlogin {
-    text-align: center;
-    padding: 0;
-    background-color: #FF5E1A;
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    width: 105%;
-}
-
-
-
-.footerubicacion {
-    text-align: center;
-    padding: 0;
-    background-color: #FF5E1A;
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    width: 100%;
-}
-
-.copyfooter {
+.copyFooter {
     display: flex;
     align-items: center;
     justify-content: center;
