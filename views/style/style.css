@@ -1064,38 +1064,45 @@ p {
     text-align: center;
     width: 100%;
     height: auto;
-    background-color: #014B3F;
+    /* background-color: #014B3F; */
     color: rgb(255, 255, 255);
 }
 
 .seccionContactanos {
-    width: 100%;
+    width: 80%;
     height: 500px;
     background-image: url(../img/imagenContacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
     border-radius: 10px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
 }
 
 .tituloContactanos {
+    font-size: 4em;
     color: rgb(255, 255, 255);
-    font-size: 70px;
-    top: 225px;
+    /* top: 225px;
     right: 31%;
-    position: absolute;
+    position: absolute; */
 }
 
 .seccionNumerosContacto {
-    font-size: 30px;
-    margin: 0;
-}
-
-.seccionNumerosContacto div {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    font-size: 2em;
+    gap: 15px;
+    /* margin: 0; */
+    width: 100%;
 }
+
+.seccionNumerosContacto ul {
+    list-style: none;
+}
+
 
 
