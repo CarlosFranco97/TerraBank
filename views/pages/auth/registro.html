@@ -10,7 +10,7 @@
 
     
     <section class="registroTerrabank">
-        <h1>Regístrese hoy en Terra Bank</h1>
+        <h1>Regístrate hoy en Terra Bank</h1>
     </section>
 
     
@@ -19,20 +19,20 @@
             <form class="formularioRegistro">
                 <h2>Ingrese sus datos</h2>
 
-                <label for="primerNombre">Nombre</label>
-                <input type="text" id="primerNombre" name="primerNombre" required>
+                <!-- <label for="nombre">Nombre</label> -->
+                <input type="text" id="nombre" name="primerNombre" placeholder="Nombre" required>
 
-                <label for="primerNombre">Apellido</label>
-                <input type="text" id="primerNombre" name="primerNombre" required>
+                <!-- <label for="apellido">Apellido</label> -->
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <!-- <label for="email">Email</label> -->
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
 
-                <label for="phone">Teléfono</label>
-                <input type="tel" id="phone" name="phone" required>
+                <!-- <label for="phone">Teléfono</label> -->
+                <input type="tel" id="phone" name="phone" placeholder="Número de teléfono" required>
 
-                <label for="address">Dirección</label>
-                <input type="text" id="address" name="address" required>
+                <!-- <label for="address">Dirección</label> -->
+                <input type="text" id="address" name="address" placeholder="Dirección de domicilio" required>
 
                 <label for="fechaNacimiento">Fecha de nacimiento</label>
                 <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
@@ -43,24 +43,33 @@
                     <option value="business">Empresa</option>
                 </select>
 
-                <label for="password">Cree una contraseña</label>
-                <input type="password" id="password" name="password" required>
+                <!-- <label for="password">Cree una contraseña</label> -->
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
 
-                <label class="terminos">
-                    <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
-                </label>
+              
+                <div class="terminos">
+                    <input id="terminosCondiciones" type="checkbox" name="terminosCondiciones" required> 
+                    <label for="terminosCondiciones">Acepto los términos y condiciones</label>
+                </div>
+               
 
-                <div class="recaptchaPlaceholder">[reCAPTCHA]</div>
+                <!-- <div class="recaptchaPlaceholder">
+                    [reCAPTCHA]
+                </div> -->
 
-                <button type="submit" class="botonRegistro">Regístrese</button>
+                <button type="submit" class="botonRegistro">
+                    Registrar
+                </button>
 
-                <p>Gracias por elegirnos</p>
+                <a href="./login.html">
+                    ¿Ya tienes cuenta?
+                </a>
 
-                <div class="redes">
+                <nav class="redes">
                     <a href="#">Facebook</a>
                     <a href="#">Twitter</a>
                     <a href="#">Instagram</a>
-                </div>
+                </nav>
             </form>
         </div>
     </section>
