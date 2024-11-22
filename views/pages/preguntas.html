@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas Frecuentes</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
 
+<body>
     <header>
 
-        <button class="registro">
-            <a href="./auth/registro.html">Regístrate</a>
-        </button>
-        <button class="login">
-            <a href="./auth/login.html">Log in</a>
-        </button>
+        <div class="contenedorBotonInicioRegistro">
+            <!-- <button class="registro"> -->
+            <a href="./views/pages/auth/registro.html">
+                Regístrate
+            </a>
+            <!-- </button> -->
+            <!-- <button class="login"> -->
+            <a href="./views/pages/auth/login.html">
+                Log in
+            </a>
+            <!-- </button> -->
+        </div>
 
-        <nav>
-            <button> 
-                <a href="">Ahorros</a>
-            </button>
-            <button> 
-                <a href="">Creditos</a>
-            </button>
-            <button> 
-                <a href="">Tarjetas de credito</a>
-            </button>
-            <button> 
-                <a href="">Inversiones</a>
-            </button>
+        <nav class="contenedorMenuHeader">
+            <a href="../../index.html">Inicio</a>
+            <!-- <button> -->
+            <a href="">Ahorros</a>
+            <!-- </button> -->
+            <!-- <button> -->
+            <a href="">Créditos</a>
+            <!-- </button> -->
+            <!-- <button> -->
+            <a href="">Tarjetas de crédito</a>
+            <!-- </button> -->
+            <!-- <button> -->
+            <a href="">Inversiones</a>
+            <!-- </button> -->
         </nav>
 
-        <img class="logo" 
-        src="../img/logoTerraBank.png" alt="logoTerraBank">
-    </header> 
+        <section>
+            <img class="logo" src="../img/logoTerraBank.png" alt="logoTerraBank">
+        </section>
 
+
+    </header>
     <div class="principalPreguntas">
-        <h1>Preguntas Frecuentes</h1>
+        <h1>Preguntas Frecuentes</h1> 
         <div>
             <h2>¿Cómo puedo abrir una cuenta?</h2>
-            <p">Para abrir una cuenta, puedes visitar cualquiera de nuestras sucursales o hacerlo en línea a través de nuestro sitio web.</p>
+            <p>Para abrir una cuenta, puedes visitar cualquiera de nuestras sucursales o hacerlo en línea a través
+                de nuestro sitio web.</p>
         </div>
         <div>
             <h2>¿Cuánto dinero me pueden prestar?</h2>
-            <p>La cantidad de dinero que te pueden prestar depende de varios factores, incluyendo el tipo de préstamo, tu perfil financiero, y las políticas del prestamista. </p>
+            <p>La cantidad de dinero que te pueden prestar depende de varios factores, incluyendo el tipo de
+                préstamo, tu perfil financiero, y las políticas del prestamista. </p>
+        </div>
         <div>
             <h2>¿Qué tipos de interés tendrá mi crédito?</h2>
             <p>El tipo de interés de un crédito en nuestro banco puede variar dependiendo de varios factores:
@@ -54,14 +67,11 @@
                 Tipo de Interés Nominal.</p>
         </div>
     </div>
-
-    
-    <button class="botonInicio"> 
-        <a href="../../index.html">
-            Inicio
-        </a>
-    </button>
-
-
+    <footer class="footer">
+        <p>
+            &copy; 2024 Terra Bank. Todos los derechos reservados.
+        </p>
+    </footer>
 </body>
+
 </html>
