@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,53 +11,60 @@
 <body>
     <header>
 
-        <button class="registro">
-            <a href="./auth/registro.html">Regístrate</a>
-        </button>
-        <button class="login">
-            <a href="./auth/login.html">Log in</a>
-        </button>
+        <div class="contenedorBotonInicioRegistro">
+            <!-- <button class="registro"> -->
+            <a href="./views/pages/auth/registro.html">
+                Regístrate
+            </a>
+            <!-- </button> -->
+            <!-- <button class="login"> -->
+            <a href="./views/pages/auth/login.html">
+                Log in
+            </a>
+            <!-- </button> -->
+        </div>
 
-        <nav>
-            <button> 
-                <a href="">Ahorros</a>
-            </button>
-            <button> 
-                <a href="">Creditos</a>
-            </button>
-            <button> 
-                <a href="">Tarjetas de credito</a>
-            </button>
-            <button> 
-                <a href="">Inversiones</a>
-            </button>
+        <nav class="contenedorMenuHeader">
+            <a href="../../index.html">Inicio</a>
+            <!-- <button> -->
+            <a href="">Ahorros</a>
+            <!-- </button> -->
+            <!-- <button> -->
+            <a href="">Créditos</a>
+            <!-- </button> -->
+            <!-- <button> -->
+            <a href="">Tarjetas de crédito</a>
+            <!-- </button> -->
+            <!-- <button> -->
+            <a href="">Inversiones</a>
+            <!-- </button> -->
         </nav>
 
-        <img class="logo" 
-        src="../img/logoTerraBank.png" alt="logoTerraBank">
+        <section>
+            <img class="logo" src="../img/logoTerraBank.png" alt="logoTerraBank">
+        </section>
 
-    </header> 
+
+    </header>
+
+    <section class="seccionTituloUbicacion">
+        <h1> Nuestras Sucursales </h1>
+    </section>
 
     <main class="mainUbicacion">
-    
-        <section class="seccionTituloUbicacion">
-            <h1> Nuestras Sucursales </h1>
-        </section>
-        <div class="divUbicacionUno">
+        <ul class="divUbicacionUno">
             <li>
                 CESDE - Calle 49 41 - 9
             </li>
-        </div>
+        </ul>
         <section>
-            <div class="divUbicacionDos"> 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15864.749206835282!2d-75.563008!3d6.2390272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1727718150039!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="divUbicacionDos">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15864.749206835282!2d-75.563008!3d6.2390272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1727718150039!5m2!1ses!2sco"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <button class="botonInicio"> 
-            <a href="../../index.html">
-                Inicio
-            </a>
-        </button>
     </main>
 
 
@@ -66,4 +74,5 @@
         </p>
     </footer>
 </body>
+
 </html>

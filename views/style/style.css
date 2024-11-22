@@ -995,7 +995,8 @@ p {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    background-color: #FF5E1A;
+    background-color: #ffffff;
+    color: #014B3F;
     width: 90%;
     height: 20%;
     border-radius: 15px;
@@ -1008,13 +1009,13 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
     width: 100%;
     height: auto;
-    background-image: url(../../img/elevated-road-junction-interchange-overpass-expressway-bangkok-twilight.jpg);
+    /* background-image: url(../../img/elevated-road-junction-interchange-overpass-expressway-bangkok-twilight.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: black;
-
+    color: black; */
 }
 
 
@@ -1022,13 +1023,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
     text-align: center;
-    width: 60%;
-    height: 120px;
+    /* border-radius: 10px; */
+    width: 100%;
+    height: 140px;
     background-color: #ffffff;
     color: #014B3F;
-    font-size: 30px;
+    font-size: 3em;
 }
 
 .divUbicacionUno {
@@ -1038,16 +1039,13 @@ p {
     color: white;
     font-style: italic;
     font-weight: bold;
-    font-size: 25px
+    font-size: 1.2em;
 }
 
-.divUbicacionDos {
-    margin-top: -20px;
-}
 
 .divUbicacionUno li {
     margin-bottom: 15px;
-    margin-top: 0;
+    /* margin-top: 0; */
     list-style: none;
 }
 
