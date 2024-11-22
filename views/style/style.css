@@ -28,6 +28,7 @@ header {
     align-items: center;
     /* position: relative; */
     width: 100%;
+    height: 100px;
 }
 
 .contenedorBotonInicioRegistro {
@@ -132,6 +133,7 @@ header {
     left: 0;
     width: 0%;
     height: 100%;
+    border-radius: 5px;
     transition: all 1s ease-in-out;
 }
 
@@ -339,14 +341,14 @@ aside nav {
 }
 
 
-#descubre {
+/* #descubre {
     display: inline-block;
     justify-content: center;
     align-items: center;
     margin-left: 700px;
     margin-top: 200px;
     color: #FF5E1A;
-}
+} */
 
 .cuentaDeAhorros {
     background-color: #FF5E1A;
@@ -409,7 +411,7 @@ div h3 {
     align-items: center;
     padding: 15px;
     margin: 10px 0;
-    height: 320px;
+    height: 650px;
     width: 100%;
     text-align: center;
     font-style: italic;
@@ -419,6 +421,7 @@ div h3 {
     color: white;
     font-weight: bold;
     font-size: 3em;
+    margin-bottom: 30px;
 }
 
 .tituloLineaCreditos span {
@@ -434,7 +437,17 @@ div h3 {
 
 .parrillaCreditos h5 {
     font-size: 2.5em;
+    color: #014B3F;
+}
 
+.parrillaCreditos img {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    right: 0;
+    top: 0;
+    border-radius: 0px 15px 0px 156px;
+    
 }
 
 .seccionCreditoUno,
@@ -443,20 +456,32 @@ div h3 {
 .seccionCreditoCuatro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    position: relative;
     background-color: white;
-    border-color: black;
+    /* border-color: black; */
     width: 25%;
-    gap: 15px;
-    height: 400px;
+    height: 90%;
     color: black;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
     /* border: 1px; */
     box-shadow: 0 0 20px rgb(0 0 0.5);
 }
 
+.seccionCreditoUno div,
+.seccionCreditoDos div,
+.seccionCreditoTres div,
+.seccionCreditoCuatro div {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
 
 .lineaCreditos button {
     width: 140px;
@@ -467,23 +492,29 @@ div h3 {
     border-radius: 10px;
     cursor: pointer;
     font-size: 0.9em;
-
+    font-weight: bolder;
 }
 
 
 .tarjetasCredito {
     background-color: #ffffff;
     padding: 15px;
-    margin-top: 220px;
+    /* margin-top: 220px; */
     width: 100%;
-    height: auto;
+    height: 900px;
 }
 
 .tituloTarjetasCredito {
     color: #014B3F;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3em;
     font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tituloTarjetasCredito span{
+    color: #FF5E1A;
 }
 
 .parrillaTarjetasCredito {
@@ -492,6 +523,10 @@ div h3 {
     width: 100%;
     height: 100%;
     gap: 20px;
+}
+
+.parrillaTarjetasCredito h6 {
+    font-size: 2em;
 }
 
 .imagenesTarjetaIzquierda {
@@ -514,25 +549,14 @@ div h3 {
 .tarjetaDos,
 .tarjetaTres,
 .tarjetaCuatro {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: relative;
     gap: 20px;
     width: 100%;
-    height: 300px;
+    height: 370px;
 }
-
-.tarjetaUno div,
-.tarjetaCuatro div {
-    margin-right: 120px
-}
-
-.tarjetaDos div,
-.tarjetaTres div {
-    margin-right: 150px;
-}
-
 
 .tarjetaUno {
     background: linear-gradient(61deg, rgba(1, 75, 63, 1) 36%, rgba(2, 202, 129, 1) 100%);
@@ -553,24 +577,74 @@ div h3 {
 
 }
 
+.tarjetaUno div,
+.tarjetaDos div,
+.tarjetaTres div,
+.tarjetaCuatro div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+
+/* .tarjetaUno div,
+.tarjetaCuatro div {
+    margin-right: 120px
+}
+
+.tarjetaDos div,
+.tarjetaTres div {
+    margin-right: 150px;
+} */
+
+
+
+
 .imagenesTarjetasCredito {
     position: absolute;
     left: 0;
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 100%;
 }
 
 
 .botonTarjetas {
     background-color: #014B3F;
     height: 60px;
-    width: 120px;
+    width: 180px;
+    padding: 0px 20px;
     border-radius: 5px;
     color: white;
     border: none;
-    font-size: 15px;
+    font-size: 1.2em;
     font-weight: bold;
     font-style: italic;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.botonTarjetas::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    border-radius: 5px;
+    transition: all 1s ease-in;
+    z-index: -1;
+}
+
+.botonTarjetas:hover::before {
+    height: 100%;
+    background-color: #FF5E1A;
+    transition: all 1s ease-in;
 }
 
 .inversionALaMano {
@@ -600,7 +674,8 @@ div h3 {
     font-size: 15px;
     font-weight: bold;
     font-style: italic;
-    border: solid 1px white;
+    /* border: solid 1px white; */
+    border: 100px solid black;
 }
 
 /* Estilos Registro */
@@ -612,13 +687,13 @@ p {
     margin-bottom: 20px;
 } */
 
-header {
+/* header {
     width: 100%;
     height: 100px;
     background-color: #014B3F;
     display: flex;
     align-items: center;
-}
+} */
 
 .principales {
     width: 100px;
@@ -822,7 +897,7 @@ header {
     color: #333;
 }
 
-.botonLogin {
+/* .botonLogin {
     background-color: #FF5E1A;
     border: none;
     color: white;
@@ -835,7 +910,7 @@ header {
 
 .botonLogin:hover {
     background-color: #014B3F;
-}
+} */
 
 
 /* Preguntas Frecuentes */
