@@ -441,7 +441,6 @@ div h3 {
 .seccionCreditoDos,
 .seccionCreditoTres,
 .seccionCreditoCuatro {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -455,8 +454,21 @@ div h3 {
     padding: 20px;
     border-radius: 15px;
     /* border: 1px; */
+    box-shadow: 0 0 20px rgb(0 0 0.5);
 }
 
+
+.lineaCreditos button {
+    width: 140px;
+    height: 45px;
+    border: none;
+    background-color: #FF5E1A;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+
+}
 
 
 .tarjetasCredito {
