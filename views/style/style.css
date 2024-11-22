@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
 body {
     width: 100%;
     font-family: "Bitter", serif;
@@ -16,96 +22,178 @@ body {
 
 header {
     background-color: #014B3F;
-    color: white;
+    /* color: white; */
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+    width: 100%;
+}
+
+.contenedorBotonInicioRegistro {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    gap: 10px;
 }
 
-.registro,
-.login {
+.contenedorBotonInicioRegistro a:first-child {
     width: 100px;
     height: 50px;
     background-color: #014B3F;
     border-radius: 25px;
-    border: 2px solid #FF5E1A;
+    /* border: 2px solid #FF5E1A; */
+    outline: 1px solid #FF5E1A;
     padding: 20px;
     font-weight: bold;
     cursor: pointer;
     color: rgb(255, 255, 255);
     font-style: italic;
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.6s;
+}
+
+.contenedorBotonInicioRegistro a:last-child {
+    width: 100px;
+    height: 50px;
+    background-color: #FF5E1A;
+    border-radius: 25px;
+    /* border: 2px solid #FF5E1A; */
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    /* position: absolute; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.6s;
+} 
+
+.contenedorBotonInicioRegistro a:last-child:hover {
+    background-color: #014B3F;
+    outline:1px solid #FF5E1A;
+    color: #FF5E1A;
+    transition: all ease-in-out 0.6s;
+} 
+
+
+.contenedorBotonInicioRegistro a:first-child:hover {
+    background-color: #FF5E1A;
+    transition: all ease-in-out 0.6s;
+}
+
+
+/* header h1 {
+    margin-bottom: 20px;
+    font-style: italic;
+} */
+
+nav {
+    /* margin: 20px 0; */
+    /* background-color: #014B3F; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.registro {
-    left: 10px;
-}
-
-.login {
-    left: 125px;
-}
-
-.logo {
-
-    width: 215px;
-    height: 160px;
-    position: absolute;
-    right: -140px;
-    margin-top: 15px;
-
-}
-
-header h1 {
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-nav {
-    margin: 20px 0;
-    background-color: #014B3F;
-}
-
-
-
-nav button {
-    background-color: #FF5E1A;
-    border: none;
-    color: white;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 125px;
-    height: 75px;
-    font-weight: bolder;
-    font-style: italic;
-}
 
 nav a {
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #FF5E1A; */
+    border: none;
+    margin: 0 5px;
+    border-radius: 5px;
+    width: 160px;
+    height: 50px;
+    outline: 1px solid #FF5E1A;
+    /* font-weight: bolder; */
+    /* font-style: italic; */
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
 }
 
-aside {
-    width: 10%;
-    height: 440px;
-    background-color: #014B3F;
-    margin-left: 88%;
-    margin-top: 10px;
-    border-radius: 20px;
+nav a::before {
     position: absolute;
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+nav a:hover::before{
+    background-color: #FF5E1A;
+    transition: all 1s ease-in;
+    width: 100%;
+}
 
 
+.logo {
+    width: 215px;
+    height: 160px;
+    filter: drop-shadow(0 0 8px rgb(0 0 0.8));
+}
+
+
+main {
+    position: relative;
+    padding: 50px 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* background-color: #014B3F; */
+    /* background-color: black; */
+    width: 100%;
+    height: 510px;
+    margin-top: 20px;
+
+}
+
+.tituloTerra {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #014B3F; */
+    color: #FF5E1A;
+    position: absolute;
+    top: 20px;
+    /* border-radius: 10px; */
+
+}
+
+.tituloTerra h1 {
+    font-size: 3em;
+}
+
+
+
+aside {
+    position: absolute;
+    width: 10%;
+    /* height: 440px; */
+    right: 15px;
+    /* margin-left: 88%; */
+    /* margin-top: 10px; */
+    /* border-radius: 20px; */
 }
 
 .preguntas,
@@ -123,46 +211,22 @@ aside {
     font-weight: bold;
 }
 
-main {
-    padding: 50px 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    background-color: #014B3F;
-    width: 100%;
-    height: 500px;
-    margin-top: 20px;
-    position: relative;
-}
 
 .persona {
     position: absolute;
-    right: 1295px;
+    bottom: 0;
+    left: -140px;
     height: 500px;
 }
 
-.tituloTerra {
-    background-color: #ffffff;
-    width: 400px;
-    height: 100px;
-    text-align: center;
-    position: absolute;
-    top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: #014B3F;
 
-}
 
-.tituloTerra h1 {
+/* .tituloTerra h1 {
     font-size: 30px;
     margin-top: 20px;
     color: #014B3F;
     font-style: italic;
-}
+} */
 
 .nuestraVisionTitulo,
 .tecnologiaTitulo,
@@ -260,10 +324,10 @@ main {
 }
 
 
-div h1 {
+/* div h1 {
     font-size: 50px;
     margin-top: 50px;
-}
+} */
 
 div h2 {
     margin-top: 30px;
@@ -390,7 +454,8 @@ div h3 {
     margin-right: 120px
 }
 
-.tarjetaDos div, .tarjetaTres div {
+.tarjetaDos div,
+.tarjetaTres div {
     margin-right: 150px;
 }
 
@@ -467,11 +532,11 @@ div h3 {
 /* Estilos Registro */
 
 
-h1,
+/* h1,
 h2,
 p {
     margin-bottom: 20px;
-}
+} */
 
 header {
     width: 100%;
@@ -493,15 +558,13 @@ header {
     cursor: pointer;
 }
 
-.logo {
+/* .logo {
     width: 200px;
     margin-left: auto;
     margin-right: 150px;
-}
+} */
 
-button:hover {
-    background-color: #FF5E1A;
-}
+
 
 
 .registroTerrabank {
@@ -610,11 +673,11 @@ button:hover {
 
 /* Estilos Log in */
 
-.logo {
+/* .logo {
     width: 200px;
     margin-left: auto;
     margin-right: 150px;
-}
+} */
 
 
 .seccionInicioSesion {
@@ -753,11 +816,11 @@ button:hover {
     font-size: 25px
 }
 
-.divUbicacionDos{
+.divUbicacionDos {
     margin-top: -20px;
 }
 
-.divUbicacionUno li{
+.divUbicacionUno li {
     margin-bottom: 15px;
     margin-top: 0;
     list-style: none;
