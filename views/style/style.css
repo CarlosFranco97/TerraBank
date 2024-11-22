@@ -8,7 +8,6 @@
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 
@@ -96,7 +95,7 @@ header {
     font-style: italic;
 } */
 
-nav {
+.contenedorMenuHeader {
     /* margin: 20px 0; */
     /* background-color: #014B3F; */
     display: flex;
@@ -105,7 +104,7 @@ nav {
 }
 
 
-nav a {
+.contenedorMenuHeader a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,9 +121,10 @@ nav a {
     letter-spacing: 2px;
     position: relative;
     z-index: 1;
+    color: white;
 }
 
-nav a::before {
+.contenedorMenuHeader a::before {
     position: absolute;
     z-index: -1;
     content: '';
@@ -135,7 +135,7 @@ nav a::before {
     transition: all 1s ease-in-out;
 }
 
-nav a:hover::before{
+.contenedorMenuHeader a:hover::before{
     background-color: #FF5E1A;
     transition: all 1s ease-in;
     width: 100%;
@@ -143,25 +143,9 @@ nav a:hover::before{
 
 
 .logo {
-    width: 215px;
+    width: 230px;
     height: 160px;
     filter: drop-shadow(0 0 8px rgb(0 0 0.8));
-}
-
-
-main {
-    position: relative;
-    padding: 50px 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    /* background-color: #014B3F; */
-    /* background-color: black; */
-    width: 100%;
-    height: 510px;
-    margin-top: 20px;
-
 }
 
 .tituloTerra {
@@ -174,8 +158,8 @@ main {
     align-items: center;
     /* color: #014B3F; */
     color: #FF5E1A;
-    position: absolute;
-    top: 20px;
+    /* position: absolute; */
+    /* top: 20px; */
     /* border-radius: 10px; */
 
 }
@@ -184,6 +168,22 @@ main {
     font-size: 3em;
 }
 
+main {
+    position: relative;
+    padding: 50px 320px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    /* background-color: #014B3F; */
+    /* background-color: black; */
+    width: 100%;
+    height: 420px;
+    /* margin-top: 20px; */
+
+}
+
+
 
 
 aside {
@@ -191,24 +191,53 @@ aside {
     width: 10%;
     /* height: 440px; */
     right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* margin-left: 88%; */
     /* margin-top: 10px; */
     /* border-radius: 20px; */
 }
 
+aside nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    gap: 15px;
+}
+
+
 .preguntas,
 .sucursales,
 .contactanos {
-    width: 100px;
-    height: 100px;
-    background-color: #014B3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 105px;
+    background-color: #FF5E1A;
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: #ffffff;
     border-radius: 50px;
     color: #FFF6EF;
-    border-color: #ffffff;
-    margin-top: 25px;
-    margin-left: 40px;
     font-style: italic;
     font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    box-shadow: 0 0 10px rgb(0, 0, 0.5);
+    /* border: 1px solid #ffffff; */
+    /* margin-top: 25px; */
+    /* margin-left: 40px; */
+}
+
+.preguntas:hover, 
+.sucursales:hover, 
+.contactanos:hover {
+    border-width: 2px 0px 0px 2px;
+    border-style: solid;
 }
 
 
@@ -217,6 +246,7 @@ aside {
     bottom: 0;
     left: -140px;
     height: 500px;
+    filter: drop-shadow(0 0 10px rgb(0 0 0.5));
 }
 
 
@@ -231,7 +261,7 @@ aside {
 .nuestraVisionTitulo,
 .tecnologiaTitulo,
 .nosotrosTitulo {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .nosotros,
@@ -241,20 +271,26 @@ aside {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 5px;
 }
 
-.nuestraVision,
+.nosotros p,
+.nuestraVision p, 
+.tecnologia p {
+    font-weight: 300;
+}
+
+
+/* .nuestraVision,
 .tecnologia {
     position: relative;
-}
+} */
 
-.nuestraVision img,
+/* .nuestraVision img,
 .tecnologia img {
     position: absolute;
     top: -13px;
-}
-
-
+} */
 
 .circle,
 .equis,
@@ -263,40 +299,42 @@ aside {
     height: 80px;
 }
 
-#bienvenido {
+.bienvenido {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    margin: 40px 0;
+    /* margin: 40px 0; */
     position: absolute;
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    margin-top: 400px;
+    bottom: -45px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* margin-top: 400px; */
 }
 
-#bienvenido h2 {
+.bienvenido h2 {
     color: #014B3F;
-    color: #014B3F;
+    /* color: #014B3F; */
     margin-bottom: 10px;
 }
 
 
-#bienvenido p {
+/* .bienvenido p {
     margin: 10px 0;
-}
+} */
 
-.boton {
+.botonBienvenido {
     display: inline-block;
     background-color: #014B3F;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 15px;
     transition: background-color 0.3s;
 }
 
-.boton:hover {
+.botonBienvenido:hover {
     background-color: #FF5E1A;
 }
 
@@ -316,11 +354,35 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     height: 400px;
     width: 100%;
-    text-align: center;
+    /* font-style: italic; */
+    /* font-weight: bolder; */
+    /* text-align: center; */
+}
+
+.cuentaDeAhorros h2 {
+    font-size: 2.5em;
+}
+
+.cuentaDeAhorros h3, .cuentaDeAhorros h4 {
+    font-size: 1.5em;
     font-style: italic;
-    font-weight: bolder;
+}
+
+.botonAbre {
+    background-color: #014B3F;
+    width: 300px;
+    height: 70px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -329,27 +391,19 @@ aside {
     margin-top: 50px;
 } */
 
-div h2 {
+/* div h2 {
     margin-top: 30px;
 }
 
 div h3 {
     color: #ffffff;
     font-size: 25px;
-}
+} */
 
-.abre {
-    background-color: #014B3F;
-    width: 250px;
-    height: 65px;
-    color: white;
-    font-style: italic;
-    font-weight: bold;
-    margin-top: 45px;
-}
+
 
 .lineaCreditos {
-    background-color: #014B3F;
+    /* background-color: #014B3F; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -361,6 +415,16 @@ div h3 {
     font-style: italic;
 }
 
+.tituloLineaCreditos {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.tituloLineaCreditos span {
+    color: #FF5E1A;
+}
+
 .parrillaCreditos {
     display: flex;
     gap: 5px;
@@ -369,7 +433,7 @@ div h3 {
 }
 
 .parrillaCreditos h5 {
-    font-size: 30px;
+    font-size: 2.5em;
 
 }
 
@@ -383,19 +447,17 @@ div h3 {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 1px;
     border-color: black;
     width: 25%;
-    gap: 50px;
+    gap: 15px;
     height: 400px;
     color: black;
+    padding: 20px;
+    border-radius: 15px;
+    /* border: 1px; */
 }
 
-.tituloLineaCreditos {
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
-}
+
 
 .tarjetasCredito {
     background-color: #ffffff;
