@@ -1013,7 +1013,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
     text-align: center;
     font-style: italic;
@@ -1034,18 +1034,73 @@ p {
     font-size: 1.3em;
 }
 
-.principalPreguntas div {
-    display: flex;
+/* .principalPreguntas div { */
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     gap: 20px;
     background-color: #ffffff;
     color: #014B3F;
     width: 90%;
-    height: 20%;
+    height: 80px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgb(0, 0, 0.2);
+    position: relative;
+    padding: 20px;
+    transition: all 0.3s ease-in; */
+    /* overflow: hidden; */
+/* }  */
+
+.divPreguntasFrecuentes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    color: #014B3F;
+    width: 70%;
+    height: 95px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0.2);
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
+
+.contenedorRespuesta {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.abrirPreguntaFrecuente {
+    overflow: visible;
+    height: 150px;
+    transition: all 0.5s ease-in-out;
+}
+
+.abrirContenedorRespuesta {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flecha {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.flechaClick {
+    transform: rotate(180deg);
+} 
+ 
 
 /* Ubicacion Estilos */
 
