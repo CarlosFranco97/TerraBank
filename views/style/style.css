@@ -23,15 +23,21 @@ body {
 
 header {
     background-color: #014B3F;
-    /* color: white; */
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: relative; */
     width: 100%;
     height: 100px;
+    /* position: relative; */
+    /* color: white; */
 }
+
+/* header h1 {
+    margin-bottom: 20px;
+    font-style: italic;
+} */
+
 
 .contenedorBotonInicioRegistro {
     display: flex;
@@ -45,19 +51,19 @@ header {
     height: 50px;
     background-color: #014B3F;
     border-radius: 25px;
-    /* border: 2px solid #FF5E1A; */
     outline: 1px solid #FF5E1A;
     padding: 20px;
     font-weight: bold;
     cursor: pointer;
     color: rgb(255, 255, 255);
     font-style: italic;
-    /* position: absolute; */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all ease-in-out 0.6s;
+    /* border: 2px solid #FF5E1A; */
+    /* position: absolute; */
 }
 
 .contenedorBotonInicioRegistro a:last-child {
@@ -65,18 +71,18 @@ header {
     height: 50px;
     background-color: #FF5E1A;
     border-radius: 25px;
-    /* border: 2px solid #FF5E1A; */
     padding: 20px;
     font-weight: bold;
     cursor: pointer;
     color: rgb(255, 255, 255);
     font-style: italic;
-    /* position: absolute; */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all ease-in-out 0.6s;
+    /* position: absolute; */
+    /* border: 2px solid #FF5E1A; */
 }
 
 .contenedorBotonInicioRegistro a:last-child:hover {
@@ -92,18 +98,12 @@ header {
     transition: all ease-in-out 0.6s;
 }
 
-
-/* header h1 {
-    margin-bottom: 20px;
-    font-style: italic;
-} */
-
 .contenedorMenuHeader {
-    /* margin: 20px 0; */
-    /* background-color: #014B3F; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin: 20px 0; */
+    /* background-color: #014B3F; */
 }
 
 
@@ -111,20 +111,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #FF5E1A; */
     border: none;
     margin: 0 5px;
     border-radius: 5px;
     width: 160px;
     height: 50px;
     outline: 1px solid #FF5E1A;
-    /* font-weight: bolder; */
-    /* font-style: italic; */
     text-align: center;
     letter-spacing: 2px;
     position: relative;
     z-index: 1;
     color: white;
+    /* font-weight: bolder; */
+    /* font-style: italic; */
+    /* background-color: #FF5E1A; */
 }
 
 .contenedorMenuHeader a::before {
@@ -160,8 +160,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: #014B3F; */
     color: #FF5E1A;
+    /* color: #014B3F; */
     /* position: absolute; */
     /* top: 20px; */
     /* border-radius: 10px; */
@@ -174,15 +174,15 @@ header {
 
 main {
     position: relative;
-    padding: 50px 320px;
     display: flex;
     align-items: start;
     justify-content: center;
+    padding: 50px 320px;
     gap: 30px;
-    /* background-color: #014B3F; */
-    /* background-color: black; */
     width: 100%;
     height: 420px;
+    /* background-color: #014B3F; */
+    /* background-color: black; */
     /* margin-top: 20px; */
 
 }
@@ -193,12 +193,12 @@ main {
 aside {
     position: absolute;
     width: 10%;
-    /* height: 440px; */
     right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* height: 440px; */
     /* margin-left: 88%; */
     /* margin-top: 10px; */
     /* border-radius: 20px; */
@@ -296,9 +296,7 @@ aside nav {
     top: -13px;
 } */
 
-.circle,
-.equis,
-.mas {
+.immagenMain {
     width: 80px;
     height: 80px;
 }
@@ -307,10 +305,10 @@ aside nav {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    /* margin: 40px 0; */
     position: absolute;
     text-align: center;
     bottom: -45px;
+    /* margin: 40px 0; */
     /* display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,35 +405,31 @@ div h3 {
 
 
 
+
 .lineaCreditos {
-    /* background-color: #014B3F; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
-    margin: 10px 0;
-    height: 650px;
+    height: 790px;
+    gap: 20px;
     width: 100%;
     text-align: center;
-    font-style: italic;
+    position: relative;
+    /* margin-top: 40px; */
 }
+
 
 .tituloLineaCreditos {
     color: white;
     font-weight: bold;
     font-size: 3em;
     margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .tituloLineaCreditos span {
     color: #FF5E1A;
-}
-
-.parrillaCreditos {
-    display: flex;
-    gap: 5px;
-    height: 100%;
-    padding: 10px;
 }
 
 .parrillaCreditos h5 {
@@ -443,40 +437,100 @@ div h3 {
     color: #014B3F;
 }
 
-.parrillaCreditos img {
+.parrillaCreditos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Slider con glide js*/
+
+.glide {
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+
+.glide__track {
+    width: 100%;
+}
+
+.glide__slides {
+    width: 100%;
+    height: 100%;
+}
+
+.glide__slide {
+    height: auto;
+    padding: 10px;
+}
+
+.glide__bullets {
+    position: absolute;
+    bottom: 6%;
+}
+
+.glide__bullet {
+    width: 15px;
+    height: 15px;
+}   
+
+.glide__arrows {
+    position: absolute;
+    width: 210px;
+    right: 20%;
+    bottom: 7%;
+}
+
+.glide__arrow {
+    border-radius: 50%;
+    border: none;
+    padding: 25px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.449);
+}
+
+.glide__arrow--left img{
+    transform: rotate(90deg);
+}
+
+.glide__arrow--right img{
+    transform: rotate(270deg);
+}
+
+
+
+.imagenCreditos {
     position: absolute;
     width: 90%;
     height: 50%;
     right: 0;
     top: 0;
     border-radius: 0px 15px 0px 156px;
-
+    object-fit: cover; 
 }
 
-.seccionCreditoUno,
-.seccionCreditoDos,
-.seccionCreditoTres,
-.seccionCreditoCuatro {
+.seccionCredito {
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
     position: relative;
     background-color: white;
-    /* border-color: black; */
-    width: 25%;
-    height: 90%;
+    width: 100%;
+    height: 450px;
     color: black;
     padding: 15px;
     border-radius: 15px;
-    /* border: 1px; */
-    box-shadow: 0 0 20px rgb(0 0 0.5);
+    box-shadow: 0 0 10px rgb(0 0 0.5);
 }
 
-.seccionCreditoUno div,
-.seccionCreditoDos div,
-.seccionCreditoTres div,
-.seccionCreditoCuatro div {
+.seccionCredito div {
     width: 100%;
     height: 45%;
     display: flex;
@@ -486,7 +540,7 @@ div h3 {
     gap: 10px;
 }
 
-.lineaCreditos button {
+.botonCreditos {
     width: 140px;
     height: 45px;
     border: none;
@@ -502,9 +556,9 @@ div h3 {
 .tarjetasCredito {
     background-color: #ffffff;
     padding: 15px;
-    /* margin-top: 220px; */
     width: 100%;
     height: 900px;
+    /* margin-top: 220px; */
 }
 
 .tituloTarjetasCredito {
@@ -529,7 +583,7 @@ div h3 {
 }
 
 .parrillaTarjetasCredito h6 {
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .imagenesTarjetaIzquierda {
@@ -545,7 +599,6 @@ div h3 {
     gap: 20px;
     width: 50%;
 }
-
 
 
 .tarjetaUno,
@@ -604,8 +657,6 @@ div h3 {
 .tarjetaTres div {
     margin-right: 150px;
 } */
-
-
 
 
 .imagenesTarjetasCredito {
@@ -668,6 +719,10 @@ div h3 {
     font-size: 3em;
 }
 
+.inversionALaMano img {
+    width: 100%;
+}
+
 .inversionALaMano section {
     width: 95%;
 }
@@ -678,7 +733,7 @@ div h3 {
     align-items: center;
     width: 100%;
     list-style: none;
-    gap: 350px;
+    gap: 300px;
 }
 
 .inversionALaMano p {
@@ -702,19 +757,19 @@ div h3 {
     font-size: 15px;
     font-weight: bold;
     font-style: italic;
-    /* border: solid 1px white; */
     border: 100px solid black;
+    /* border: solid 1px white; */
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     background-color: #FF5E1A;
     color: rgb(255, 255, 255);
     width: 100%;
     height: 50px;
+    /* text-align: center; */
 }
 
 
@@ -813,22 +868,22 @@ p {
 }
 
 .formularioRegistro label {
-    /* margin-bottom: 5px; */
-    /* font-weight: bold; */
     font-size: 1.2em;
     letter-spacing: 2px;
+    /* margin-bottom: 5px; */
+    /* font-weight: bold; */
 }
 
 .formularioRegistro > input,
 .formularioRegistro > select {
     width: 100%;
     padding: 10px;
-    /* margin-bottom: 20px; */
     border-radius: 10px;
     border: 1px solid #ccc;
     outline: 1px solid #ffffff;
     background-color: #f2f2f2;
     font-size: 1.2em;
+    /* margin-bottom: 20px; */
 }
 
 .formularioRegistro>input:focus {
@@ -844,10 +899,10 @@ p {
 }
 
 .terminos input {
-    /* margin-right: 10px; */
-    /* transform: scale(1.5); */
     width: 25px;
     height: 25px;
+    /* margin-right: 10px; */
+    /* transform: scale(1.5); */
 }
 
 /* .recaptchaPlaceholder {
@@ -913,7 +968,6 @@ p {
 
 
 .seccionInicioSesion {
-    /* flex: 1; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -921,6 +975,7 @@ p {
     text-align: center;
     font-style: italic;
     height: 100%;
+    /* flex: 1; */
 }
 
 .contenedorInicioSesion {
@@ -947,12 +1002,12 @@ p {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    /* color: rgb(0, 0, 0); */
     padding: 30px;
     border-radius: 10px;
     width: 100%;
     font-weight: bold;
     box-shadow: 0 0 15px rgb(0 0 0.8);
+    /* color: rgb(0, 0, 0); */
 }
 
 .formularioInicioSesion h1 {
@@ -1034,23 +1089,6 @@ p {
     font-size: 1.3em;
 }
 
-/* .principalPreguntas div { */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    background-color: #ffffff;
-    color: #014B3F;
-    width: 90%;
-    height: 80px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgb(0, 0, 0.2);
-    position: relative;
-    padding: 20px;
-    transition: all 0.3s ease-in; */
-    /* overflow: hidden; */
-/* }  */
 
 .divPreguntasFrecuentes {
     display: flex;
@@ -1123,12 +1161,12 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* border-radius: 10px; */
     width: 100%;
     height: 140px;
     background-color: #ffffff;
     color: #014B3F;
     font-size: 3em;
+    /* border-radius: 10px; */
 }
 
 .divUbicacionUno {
@@ -1144,8 +1182,8 @@ p {
 
 .divUbicacionUno li {
     margin-bottom: 15px;
-    /* margin-top: 0; */
     list-style: none;
+    /* margin-top: 0; */
 }
 
 .divUbicacionDos iframe {
@@ -1163,8 +1201,8 @@ p {
     text-align: center;
     width: 100%;
     height: auto;
-    /* background-color: #014B3F; */
     color: rgb(255, 255, 255);
+    /* background-color: #014B3F; */
 }
 
 .seccionContactanos {
@@ -1195,8 +1233,8 @@ p {
     justify-content: center;
     font-size: 2em;
     gap: 15px;
-    /* margin: 0; */
     width: 100%;
+    /* margin: 0; */
 }
 
 .seccionNumerosContacto ul {

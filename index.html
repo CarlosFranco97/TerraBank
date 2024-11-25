@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terra Bank</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.2/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.2/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="./views/style/style.css">
-
+    <title>Terra Bank</title>
 </head>
 
 <body>
@@ -58,7 +59,7 @@
 
 
         <section class="nosotros">
-            <img class="circle" src="./views/img/circle.png" alt="circle">
+            <img class="immagenMain" src="./views/img/circle.png" alt="circle">
             <h2 class="nosotrosTitulo">
                 Nosotros
             </h2>
@@ -68,7 +69,7 @@
         </section>
 
         <div class="nuestraVision">
-            <img class="equis" src="./views/img/equis.png" alt="equis">
+            <img class="immagenMain" src="./views/img/equis.png" alt="equis">
             <h2 class="nuestraVisionTitulo">
                 Nuestra visión
             </h2>
@@ -78,7 +79,7 @@
         </div>
 
         <div class="tecnologia">
-            <img class="mas" src="./views/img/plus.png" alt="plus">
+            <img class="immagenMain" src="./views/img/plus.png" alt="plus">
             <h2 class="tecnologiaTitulo">
                 Tecnologia
             </h2>
@@ -121,51 +122,83 @@
 
 
     <div class="lineaCreditos">
-        <h3 class="tituloLineaCreditos">LÍNEA DE <span>CRÉDITOS</span></h3>
+
+        <h3 class="tituloLineaCreditos">
+            LÍNEA DE <span>CRÉDITOS</span>
+        </h3>
 
         <div class="parrillaCreditos">
-            <section class="seccionCreditoUno">
-                <img src="./views/img/creditos/libreInversion.jpg" alt="">
-                <div>
-                    <h5>Libre Inversión</h5>
-                    <p>¿Alguna idea de negocio, gasto inesperado o ese gustico que te quieres dar?
-                        Conoce aquí si aplicas para nuestro crédito de libre inversión</p>
-                    <button>Ver más</button>
-                </div>
-            </section>
 
-            <section class="seccionCreditoDos">
-                <img src="./views/img/creditos/vehiculo.jpg" alt="">
-                <div>
-                    <h5>Vehículo</h5>
-                    <p>Pensando en comprar auto nuevo o usado?
-                        No lo pienses más y aplica aquí para tu crédito de vehículo</p>
+            <div class="glide" id="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <section class="seccionCredito">
+                                <img class="imagenCreditos" src="./views/img/creditos/libreInversion.jpg" alt="">
+                                <div>
+                                    <h5>Libre Inversión</h5>
+                                    <p>¿Alguna idea de negocio, gasto inesperado o ese gustico que te quieres dar?
+                                        Conoce aquí si aplicas para nuestro crédito de libre inversión</p>
+                                    <button class="botonCreditos">Ver más</button>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="glide__slide">
+                            <section class="seccionCredito">
+                                <img class="imagenCreditos" src="./views/img/creditos/vehiculo.jpg" alt="">
+                                <div>
+                                    <h5>Vehículo</h5>
+                                    <p>Pensando en comprar auto nuevo o usado?
+                                        No lo pienses más y aplica aquí para tu crédito de vehículo</p>
 
-                    <button>Conoce aquí más</button>
-                </div>
-            </section>
+                                    <button class="botonCreditos">Conoce aquí más</button>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="glide__slide">
 
-            <section class="seccionCreditoTres">
-                <img src="./views/img/creditos/ecomovil.jpg" alt="">
-                <div>
-                    <h5>Ecomovil</h5>
-                    <p>Estamos comprometidos con el medio ambiente, tenemos una tasa preferencial para créditos de
-                        vehículos
-                        amigables con el medio ambiente.</p>
-                    <button>Entra aquí</button>
+                            <section class="seccionCredito">
+                                <img class="imagenCreditos" src="./views/img/creditos/ecomovil.jpg" alt="">
+                                <div>
+                                    <h5>Ecomovil</h5>
+                                    <p>Estamos comprometidos con el medio ambiente, tenemos una tasa preferencial para
+                                        créditos de
+                                        vehículos
+                                        amigables con el medio ambiente.</p>
+                                    <button class="botonCreditos">Entra aquí</button>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="glide__slide">
+                            <section class="seccionCredito">
+                                <img class="imagenCreditos" src="./views/img/creditos/vivienda.jpg" alt="">
+                                <div>
+                                    <h5>Vivienda</h5>
+                                    <p>La mejor tasa para asegurar tú futuro</p>
+                                    <button class="botonCreditos">Conoce aquí más</button>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
                 </div>
-            </section>
 
-            <section class="seccionCreditoCuatro">
-                <img src="./views/img/creditos/vivienda.jpg" alt="">
-                <div>
-                    <h5>Vivienda</h5>
-                    <p>La mejor tasa para asegurar tú futuro</p>
-                    <button>Conoce aquí más</button>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
                 </div>
-            </section>
+                <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <img src="./views/img/arrowSlider.png" alt="">
+                </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <img src="./views/img/arrowSlider.png" alt="">
+                </button>
+            </div>
 
         </div>
+
+
+    </div>
     </div>
 
     <section class="tarjetasCredito">
@@ -246,6 +279,9 @@
             &copy; 2024 Terra Bank. Todos los derechos reservados.
         </p>
     </footer>
+
+    <script type="module" src="./views/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </body>
 
 </html>
