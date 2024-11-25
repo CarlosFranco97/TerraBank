@@ -22,4 +22,4 @@ const config = {
 
 initializeGlide('#glide', config);
 
-
+AOS.init();
