@@ -845,10 +845,18 @@ p {
     margin: 0 auto;
 }
 
+
 .contenedorRegistro {
     width: 100%;
     display: flex;
     justify-content: center;
+    
+}
+.incorrecto{
+    background-color: red;
+}
+.correcto{
+    background-color: green;
 }
 
 .formularioRegistro {
