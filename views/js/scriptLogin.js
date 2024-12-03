@@ -1,6 +1,6 @@
 import { verificarUsuario } from "../../../controllers/controllerUsuario.js";
 
-const loginForm = document.querySelector(".loginForm");
+const loginForm = document.querySelector(".formularioInicioSesion");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 
