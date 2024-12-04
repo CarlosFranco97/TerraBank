@@ -44,6 +44,17 @@
       "birthdate": "2024-11-28",
       "typeAccount": "personal",
       "password": "Abibi123!"
+    },
+    {
+      "id": "46b2",
+      "name": "Carlos",
+      "lastName": "Felmenal",
+      "email": "Carlos_franco63@hotmail.com",
+      "phone": "+57 3015043807",
+      "addres": "Cl 74 sur #46e-78",
+      "birthdate": "2024-12-06",
+      "typeAccount": "business",
+      "password": "Abibi1234!"
     }
   ]
 }

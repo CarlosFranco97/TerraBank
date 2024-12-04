@@ -41,8 +41,7 @@ const postUsers = async(newUser) => {
     }
 }
 
-export const register = (e) => {
-    e.preventDefault();
+export const register = () => {
     let registerName = document.getElementById('nombre').value; 
     let registerLastName = document.getElementById('apellido').value; 
     let registerEmail = document.getElementById('email').value;
