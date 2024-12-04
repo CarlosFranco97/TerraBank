@@ -1,10 +1,10 @@
 
-export const users = []; 
+export let users = []; 
 
 const urlUsers = 'http://localhost:8000/modelUsuarios';
 
 
-const getUsers = async() => {
+export const getUsers = async() => {
 
     try {
         const response = await fetch(urlUsers);
@@ -15,9 +15,9 @@ const getUsers = async() => {
 
         const data = await response.json();
 
-        users.push(data);
+        users = data;
 
-        console.log({users});
+        return users;
 
     } catch(err) {
         console.error(err);
@@ -25,7 +25,6 @@ const getUsers = async() => {
 
 }
 
-getUsers();
 
 
 
