@@ -850,14 +850,9 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+}
     
-}
-.incorrecto{
-    background-color: red;
-}
-.correcto{
-    background-color: green;
-}
+
 
 .formularioRegistro {
     display: flex;
@@ -890,16 +885,16 @@ p {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #ccc;
-    outline: 1px solid #ffffff;
+    border: 0.5px solid #ccc;
+    /* outline: 1px solid #ffffff; */
     background-color: #f2f2f2;
     font-size: 1.2em;
     /* margin-bottom: 20px; */
 }
 
-.formularioRegistro>input:focus {
+/* .formularioRegistro>input:focus {
     outline: 1px solid blue;
-}
+} */
 
 .terminos {
     display: flex;
@@ -1145,6 +1140,12 @@ p {
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
+.correcto {   
+    outline: solid 2px green;
+}
+ .incorrecto {
+    outline: solid 2px red;
+  }
 
 .flechaClick {
     transform: rotate(180deg);
