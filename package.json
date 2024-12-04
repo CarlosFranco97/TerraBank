@@ -1,0 +1,20 @@
+{
+  "name": "terrabank",
+  "version": "1.0.0",
+  "description": "Se realiza la migración a el encarpetado model view controller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json": "json-server --watch models/database.json --port 8000"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavasScript"
+  ],
+  "author": "Estudiantes Cesde",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

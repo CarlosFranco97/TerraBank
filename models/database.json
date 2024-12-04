@@ -1,0 +1,15 @@
+{
+    "modelsTerrabank": [],
+    "modelUsuarios": [
+        {   
+            "nombre": "Carlos",
+            "apellido": "Franco",
+            "correo": "usuario1@terra.com", 
+            "telefono": "301548932",
+            "direccion": "cl 20 20",
+            "fecha": "20-11-12",
+            "tipoCuenta": "Persona",
+            "contrasena": "123456"
+        }
+    ]
+}

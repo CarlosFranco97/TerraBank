@@ -1,4 +1,4 @@
-import { verificarUsuario } from "../../../controllers/controllerUsuario.js";
+import { verificarUsuario } from "../../../controllers/controllerLogin.js";
 
 const loginForm = document.querySelector(".formularioInicioSesion");
 const emailInput = document.getElementById("email");
