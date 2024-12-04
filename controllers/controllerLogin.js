@@ -1,5 +1,6 @@
 import { usuarios } from "../models/modelUsuarios.js";
 
+
 export const verificarUsuario = (email, password) => {
     if (!email || !password) {
         return { success: false, message: "Todos los campos son obligatorios." };
@@ -13,3 +14,5 @@ export const verificarUsuario = (email, password) => {
         return { success: false, message: "Credenciales incorrectas." };
     }
 };
+
+

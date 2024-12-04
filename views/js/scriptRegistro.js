@@ -1,4 +1,7 @@
-import { regularExpressions } from "../helpers/expresionesRegularesFormularios.js"; 
+import { regularExpressions } from "../../helpers/expresionesRegularesFormularios.js"    
+import { register } from "../../controllers/controllerRegistro.js";
+
+let buttonRegister = document.getElementById('btnRegistro'); 
 
 let inputs = document.getElementsByTagName('input');
 for (let index = 0; index < inputs.length; index++) {
@@ -49,8 +52,8 @@ function validarformulario({target}) {
       break;
 
     case "password":
-      if (regularExpressions.contraseña.test(target.value)) {
-        document.getElementById("register-confirmar").classList.add("correcto");
+      if (regularExpressions.contrasena.test(target.value)) {
+        document.getElementById("password").classList.add("correcto");
         document.getElementById("password").classList.remove("incorrecto");
       } else {
         document.getElementById("password").classList.add("incorrecto");
@@ -61,3 +64,5 @@ function validarformulario({target}) {
 
 
 }
+
+buttonRegister.addEventListener('click', register)

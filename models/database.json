@@ -1,15 +1,115 @@
 {
-    "modelsTerrabank": [],
-    "modelUsuarios": [
-        {   
-            "nombre": "Carlos",
-            "apellido": "Franco",
-            "correo": "usuario1@terra.com", 
-            "telefono": "301548932",
-            "direccion": "cl 20 20",
-            "fecha": "20-11-12",
-            "tipoCuenta": "Persona",
-            "contrasena": "123456"
-        }
-    ]
+  "modelsTerrabank": [],
+  "modelUsuarios": [
+    {
+      "nombre": "Carlos",
+      "apellido": "Franco",
+      "correo": "usuario1@terra.com",
+      "telefono": "301548932",
+      "direccion": "cl 20 20",
+      "fecha": "20-11-12",
+      "tipoCuenta": "Persona",
+      "contrasena": "123456",
+      "id": "77a1"
+    },
+    {
+      "id": "0e9b",
+      "name": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "addres": "",
+      "birthdate": "",
+      "typeAccount": "personal",
+      "password": ""
+    },
+    {
+      "id": "ffa1",
+      "name": "Carlos",
+      "lastName": "Franco",
+      "email": "carlos@gmail.com",
+      "phone": "+57 3015043807",
+      "addres": "Cl 74 sur #46e-78",
+      "birthdate": "2024-12-20",
+      "typeAccount": "business",
+      "password": "Abibi123!"
+    },
+    {
+      "id": "a422",
+      "name": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "addres": "",
+      "birthdate": "",
+      "typeAccount": "personal",
+      "password": ""
+    },
+    {
+      "id": "fb08",
+      "name": "Carlos",
+      "lastName": "Felmenal",
+      "email": "Carlos_franco63@hotmail.com",
+      "phone": "+57 3015043807",
+      "addres": "Cl 74 sur #46e-78",
+      "birthdate": "2024-12-27",
+      "typeAccount": "business",
+      "password": "Abibi123!"
+    },
+    {
+      "id": "3442",
+      "name": "Carlos",
+      "lastName": "Felmenal",
+      "email": "Carlos_franco63@hotmail.com",
+      "phone": "+57 3015043807",
+      "addres": "Cl 74 sur #46e-78",
+      "birthdate": "2024-11-28",
+      "typeAccount": "personal",
+      "password": "Abibi123!"
+    },
+    {
+      "id": "0c43",
+      "name": "Carlos",
+      "lastName": "Felmenal",
+      "email": "Carlos_franco63@hotmail.com",
+      "phone": "+57 3015043807",
+      "addres": "Cl 74 sur #46e-78",
+      "birthdate": "2024-12-31",
+      "typeAccount": "personal",
+      "password": "Abibi123!"
+    },
+    {
+      "id": "224a",
+      "name": "Carlos",
+      "lastName": "Felmenal",
+      "email": "Carlos_franco63@hotmail.com",
+      "phone": "+57 3015043807",
+      "addres": "Cl 74 sur #46e-78",
+      "birthdate": "2024-12-27",
+      "typeAccount": "personal",
+      "password": "Abibi123!"
+    },
+    {
+      "id": "655d",
+      "name": "Carlos",
+      "lastName": "Felmenal",
+      "email": "Carlos_franco63@hotmail.com",
+      "phone": "+57 3015043807",
+      "addres": "Cl 74 sur #46e-78",
+      "birthdate": "2024-12-27",
+      "typeAccount": "personal",
+      "password": "Abibi123!"
+    },
+    {
+      "id": "3adf",
+      "name": "Carlos",
+      "lastName": "Felmenal",
+      "email": "carlos@gmail.com",
+      "phone": "+57 3015043807",
+      "addres": "Cl 74 sur #46e-78",
+      "birthdate": "2024-12-27",
+      "typeAccount": "business",
+      "password": "Abibi123!"
+    }
+  ]
 }
