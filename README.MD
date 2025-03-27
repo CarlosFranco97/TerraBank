@@ -16,6 +16,9 @@ Glide.js: Para la implementación de sliders interactivos.
 
 Helpers: Funciones reutilizables para mejorar la modularidad del código.
 
+JSON Server: Para la persistencia de datos de los usuarios.
+
+
 
 ## Características principales
 
@@ -26,8 +29,6 @@ Gestión de usuarios y creación de tarjetas de crédito.
 Listado de usuarios y transacciones para administradores.
 
 Uso de Glide.js para la creación de sliders dinámicos.
-
-JSON Server: Para la persistencia de datos de los usuarios.
 
 Código modularizado con helpers.
 
